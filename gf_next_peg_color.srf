@@ -1,0 +1,27 @@
+﻿$PBExportHeader$gf_next_peg_color.srf
+global type gf_next_peg_color from function_object
+end type
+
+forward prototypes
+global function string gf_next_peg_color (string ps_peg_color)
+end prototypes
+
+global function string gf_next_peg_color (string ps_peg_color);// Rotate code breaker color
+CHOOSE CASE ps_peg_color
+	CASE "r" // red
+		RETURN "n"
+	CASE "n" // black (noir)
+		RETURN "g"
+	CASE "g" // green
+		RETURN "b"
+	CASE "b" // blue
+		RETURN "w"
+	CASE "w" // white
+		RETURN "y"
+	CASE "y" // yellow
+		RETURN " "
+	CASE ELSE
+		RETURN "r"
+END CHOOSE
+end function
+

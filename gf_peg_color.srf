@@ -1,0 +1,29 @@
+﻿$PBExportHeader$gf_peg_color.srf
+$PBExportComments$Peg Color in RGB
+global type gf_peg_color from function_object
+end type
+
+forward prototypes
+global function long gf_peg_color (string ps_color)
+end prototypes
+
+global function long gf_peg_color (string ps_color);// Translate a master mind color to an RGB color
+CHOOSE CASE ps_color
+	CASE "r" // red
+		RETURN 255
+	CASE "n" // black (noir)
+		RETURN 0
+	CASE "g" // green
+		RETURN 65280
+	CASE "b" // blue
+		RETURN 16711680
+	CASE "w" // white
+		RETURN 16777215
+	CASE "y" // yellow
+		RETURN 65535
+	CASE ELSE // dark gray
+		RETURN 8421504
+END CHOOSE
+
+end function
+
