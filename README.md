@@ -50,6 +50,12 @@ PowerBuilder see: https://www.appeon.com/
 
 Note: If you want to deploy the app with the .ICO files imbedded in the .EXE, use or merge the contents MMIND.PBR resource file.
 
+## History Of This Project
+
+* December 1995, First version written over a weekend for young son in PB 5
+* July 2004, migrated to PB 8 and added keyboard support
+* March 2018, migrated to Appeon PB 17 and refactored
+
 ## Author
 
 * Benjamin Seaver https://www.seaver99.com/mastermind/
